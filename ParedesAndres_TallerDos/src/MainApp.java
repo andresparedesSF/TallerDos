@@ -41,7 +41,6 @@ public class MainApp extends PApplet{
 	@Override
 	public void mouseDragged() {
 		app.arrastrar(mouseX, mouseY);
-		println(mouseX + " " + mouseY);
 	}
 	
 	@Override

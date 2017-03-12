@@ -16,7 +16,7 @@ public class Logica {
 		
 		for (int i = 0; i < 5; i++) {
 			dato = nombres[i];
-			imagenes.add(new Banda(app, app.random(0, app.width), app.random(0, app.height), dato));
+			imagenes.add(new Banda(app, (i*250) + 100, 100, dato));
 		}
 		
 	}

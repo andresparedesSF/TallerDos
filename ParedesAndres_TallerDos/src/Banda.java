@@ -23,9 +23,9 @@ public class Banda {
 	
 	public void pintar(){
 		
-		
-		//app.imageMode(PConstants.CENTER);
+		app.imageMode(app.CENTER);
 		app.image(nucleos, posX, posY, tamano, tamano);
+		app.imageMode(app.CORNER);
 		
 	}
 	
