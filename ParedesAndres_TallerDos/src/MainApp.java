@@ -1,4 +1,5 @@
 import processing.core.PApplet;
+import processing.core.PImage;
 
 public class MainApp extends PApplet{
 	
@@ -7,6 +8,7 @@ public class MainApp extends PApplet{
 	}
 	
 	Logica app;
+	PImage fondo;
 	
 	@Override
 	public void settings() {
@@ -16,11 +18,13 @@ public class MainApp extends PApplet{
 	@Override
 	public void setup() {
 		app = new Logica(this);
+		fondo = loadImage("Fondo_TallerDos.png");
 	}
 	
 	@Override
 	public void draw() {
-		background(0);
+		//background(0);
+		image(fondo,0,0,1200,700);
 		app.pintar();
 	}
 	
