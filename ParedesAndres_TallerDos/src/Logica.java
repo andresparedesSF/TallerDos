@@ -7,11 +7,16 @@ public class Logica {
 	private PApplet app;
 	private ArrayList<Banda> imagenes = new ArrayList<Banda>();
 	private Banda selector; 
+	private String[] nombres;
+	private String dato;
 	
 	public Logica(PApplet app){
 		
+		nombres = app.loadStrings("../data/nombres.txt");
+		
 		for (int i = 0; i < 5; i++) {
-			imagenes.add(new Banda(app, (i*50) + 100,100));
+			dato = nombres[i];
+			imagenes.add(new Banda(app, (i*50) + 100, 100, dato));
 		}
 		
 	}

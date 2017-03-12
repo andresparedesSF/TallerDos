@@ -1,0 +1,5 @@
+nucleo1.png
+nucleo2.png
+nucleo3.png
+nucleo4.png
+nucleo5.png
