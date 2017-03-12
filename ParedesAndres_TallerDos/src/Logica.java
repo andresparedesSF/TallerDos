@@ -32,7 +32,7 @@ public class Logica {
 	public void selecionar(float mouseX, float mouseY){
 		for (int i = 0; i < imagenes.size(); i++) {
 			Banda p = imagenes.get(i);
-			if(PApplet.dist(p.getPosX(), p.getPosY(), mouseX, mouseY)<150){
+			if(PApplet.dist(p.getPosX(), p.getPosY(), mouseX, mouseY)<50){
 				selector = p;
 			}
 		}
@@ -42,6 +42,7 @@ public class Logica {
 		if(selector != null){
 			selector.mover(mouseX, mouseY);
 		}
+		
 	}
 	
 	public void soltar(){

@@ -6,12 +6,9 @@ public class Banda {
 	private PApplet app;
 	private float posX;
 	private float posY;
+	private float tamano;
 	private String nombre;
-	private PImage nucleoUno;
-	private PImage nucleoDos;
-	private PImage nucleoTres;
-	private PImage nucleoCuatro;
-	private PImage nucleoCinco;
+	private PImage nucleos;
 	
 	public Banda(PApplet app, float posX, float posY, String nombre){
 		
@@ -19,22 +16,16 @@ public class Banda {
 		this.posX = posX;
 		this.posY = posY;
 		this.nombre = nombre;
-		
-		nucleoUno = app.loadImage(nombre);
-		//nucleoDos = app.loadImage("../data/nucleo2.png");
-		//nucleoTres = app.loadImage("../data/nucleo3.png");
-		//nucleoCuatro = app.loadImage("../data/nucleo4.png");
-		//nucleoCinco = app.loadImage("../data/nucleo5.png");
+		tamano = 150;
+		nucleos = app.loadImage(nombre);
 		
 	}
 	
 	public void pintar(){
 		
-		app.image(nucleoUno, posX, posY);
-		//app.image(nucleoDos, posX, posY);
-		//app.image(nucleoTres, posX, posY);
-		//app.image(nucleoCuatro, posX, posY);
-		//app.image(nucleoCinco, posX, posY);
+		
+		//app.imageMode(PConstants.CENTER);
+		app.image(nucleos, posX, posY, tamano, tamano);
 		
 	}
 	
